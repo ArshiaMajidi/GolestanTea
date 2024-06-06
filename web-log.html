@@ -809,6 +809,30 @@
 
   <!--end menu-->
   <script src="./js/main.js"></script>
+  <script>
+    const lightSwitches = document.querySelector('.light-switch');
+    let userTheme = "light"
+    const systemTheme = window.matchMedia('prefers-dark-interface: dark')
+
+
+    if (localStorage.getItem('dark-mode') === 'true' || (!('dark-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.querySelector('html').classList.add('dark');
+    } else {
+      document.querySelector('html').classList.remove('dark');
+    }
+    lightSwitches.addEventListener('click', () => {
+      if (userTheme == "light") {
+        document.documentElement.classList.add("light")
+        document.documentElement.classList.remove("dark")
+        userTheme = "dark"
+      } else {
+        document.documentElement.classList.add("dark")
+        document.documentElement.classList.remove("light")
+        userTheme = "light"
+      }
+    })
+
+  </script>
 </body>
 
 </html>
