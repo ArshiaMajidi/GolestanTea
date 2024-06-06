@@ -15,7 +15,9 @@
 
   <header
     class="sticky top-0 z-40 flex flex-col items-center py-2 pb-4 md:pb-0 lg:flex-row lg:justify-center lg:gap-16 lg:p-0 dark:bg-white"
-    style="background-image: url(./img/img-shopping/header-back-1.png)">
+    style="
+              background-image: url(./img/img-shopping/header-back-1.png);
+            ">
     <div>
       <a href="#svg"></a>
       <a href="./index.html">
@@ -30,10 +32,10 @@
       </label>
       <input type="checkbox" name="" id="menuNav" class="hidden" />
       <nav
-        class="absolute lg:overflow-visible top-11 right-0 w-full h-0 flex flex-col justify-between items-start overflow-hidden transition-all duration-300 md:relative md:inset-0 md:!h-fit md:flex-row md:justify-center lg:w-fit lg:ml-[100px] text-[#AFB2B4] text-[18px]"
+        class="absolute lg:overflow-visible top-11 right-0 w-full h-0 flex flex-col justify-between items-start overflow-hidden transition-all duration-300 md:relative md:inset-0 md:h-fit md:flex-row md:justify-center lg:w-fit lg:ml-[100px] text-[#AFB2B4] text-[18px]"
         style="
-            background-image: url(./img/img-shopping/header-back-1.png);
-          ">
+                  background-image: url(./img/img-shopping/header-back-1.png);
+                ">
         <div class="">
           <a href="./index.html"
             class="block hover:text-white lg:border-l-[1px] p-3 lg:border-[#4d4d52] lg:px-4 lg:py-0">صفحه اصلی
@@ -48,7 +50,7 @@
               گلستان</a>
           </div>
 
-          <div class="hidden absolute lg:group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
+          <div class="hidden absolute group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
             <div class="px-3 py-4">
               <a href="#" class="hover:text-white">معرفی شرکت</a>
               <a href="#" class="hover:text-white">تاریخچه گلستان</a>
@@ -66,7 +68,7 @@
         <div class="group relative">
           <a href="#"
             class="block hover:text-white lg:border-l-[1px] p-3 lg:border-[#4d4d52] lg:px-4 lg:py-0">محصولات</a>
-          <div class="hidden absolute lg:group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
+          <div class="hidden absolute group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
             <div class="px-3 py-4">
               <a href="#" class="block">چای</a>
               <a href="#" class="block hover:text-white">ناتس</a>
@@ -90,7 +92,7 @@
         <div class="group relative">
           <a href="./web-log.html"
             class="block hover:text-white lg:border-l-[1px] p-3 lg:border-[#4d4d52] lg:px-4 lg:py-0">وبلاگ</a>
-          <div class="hidden absolute lg:group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
+          <div class="hidden absolute group-hover:flex w-[140px] leading-10 bg-[#2d2d2d]">
             <div class="py-4 px-3">
               <a href="" class="hover:text-white">مجله گلستان</a>
               <a href="" class="hover:text-white">فرهنگ غذایی</a>
@@ -116,7 +118,7 @@
         <div class="group relative">
           <a href="#" class="block hover:text-white lg:border-l-[1px] p-3 lg:border-[#4d4d52] lg:px-4 lg:py-0">تماس با
             ما</a>
-          <div class="hidden absolute lg:group-hover:flex w-[170px] leading-10 bg-[#2d2d2d]">
+          <div class="hidden absolute group-hover:flex w-[170px] leading-10 bg-[#2d2d2d]">
             <div class="py-4 px-3">
               <a href="" class="block hover:text-white">دفتر مرکزی</a>
               <a href="" class="block hover:text-white">صدای مصرف کنندگان</a>
@@ -129,8 +131,26 @@
         <div>
           <a href="#" class="block hover:text-white lg:border-l-[1px] p-3 lg:border-[#4d4d52] lg:px-4 lg:py-0">EN</a>
         </div>
+
+        <!-- Dark Mode -->
+        <div class="flex flex-col justify-center ml-3">
+          <div class="relative cursor-pointer p-2 light-switch">
+            <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-slate-300"
+                d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+              <path class="fill-slate-400" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+            </svg>
+            <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-slate-400"
+                d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+              <path class="fill-slate-500"
+                d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+            </svg>
+          </div>
+        </div>
       </nav>
     </div>
+    <!-- End Dark mode -->
   </header>
 
   <div class="fixed w-[40px] h-[40px] z-50 left-4 bottom-4">
@@ -143,11 +163,7 @@
       </svg>
     </a>
   </div>
-  <div
-    class="fixed flex justify-center items-center w-[40px] h-[40px] bg-[#58595b67] z-50 right-4 bottom-4 cursor-pointer"
-    id="themeSwitch">
-    <p class="text-white leading-[24px]">TH</p>
-  </div>
+
   <!-- veblog -->
   <div class="mt-24 mr-48">
     <div class="text-[23px] text-red-500 font-bold">
